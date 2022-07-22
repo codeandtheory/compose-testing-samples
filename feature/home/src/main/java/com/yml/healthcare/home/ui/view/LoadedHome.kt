@@ -1,6 +1,5 @@
 package com.yml.healthcare.home.ui.view
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.rememberScrollState
@@ -29,13 +28,15 @@ fun LoadedHomeScreen(
         data.displayArticles?.let {
 
             Row(
-                Modifier.fillMaxWidth(),
+                Modifier
+                    .fillMaxWidth()
+                    .padding(top = 4.dp)
+                    .padding(16.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Header(
-                    text = data.articleHeader,
-                    modifier = Modifier.padding(start = 16.dp, top = 20.dp)
+                    text = data.articleHeader
                 )
 
                 Link(text = "View All >") {
@@ -48,14 +49,13 @@ fun LoadedHomeScreen(
                     item {
                         HCard(
                             modifier = Modifier
-                                .fillParentMaxWidth(.7f)
-                                .clickable {
-                                    userIntent(HomeUserIntent.NavigateToArticleDetail(it.url))
-                                },
+                                .fillParentMaxWidth(.7f),
                             title = it.title,
                             description = it.description,
                             tags = it.tags
-                        )
+                        ) {
+                            userIntent(HomeUserIntent.NavigateToArticleDetail(it.url))
+                        }
                     }
                 }
 
@@ -64,17 +64,18 @@ fun LoadedHomeScreen(
 
         data.displayBlogs?.let {
             Row(
-                Modifier.fillMaxWidth(),
+                Modifier
+                    .fillMaxWidth()
+                    .padding(top = 4.dp)
+                    .padding(16.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Header(
-                    text = data.blogHeader,
-                    modifier = Modifier.padding(start = 16.dp, top = 20.dp)
+                    text = data.blogHeader
                 )
-
                 Link(text = "View All >") {
-                    // todo navigate to article list page
+                    userIntent(HomeUserIntent.ViewAllArticles)
                 }
             }
             LazyRow {
@@ -85,7 +86,9 @@ fun LoadedHomeScreen(
                             title = it.title,
                             description = it.description,
                             tags = it.tags
-                        )
+                        ) {
+                            userIntent(HomeUserIntent.NavigateToArticleDetail(it.url))
+                        }
                     }
                 }
             }

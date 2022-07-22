@@ -10,9 +10,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.yml.design.theme.BahamaBlue
 import com.yml.design.theme.JetBlack
+import com.yml.design.theme.Spearmint
 
 @Composable
 fun Header(text: String, modifier: Modifier = Modifier) {
@@ -22,7 +25,8 @@ fun Header(text: String, modifier: Modifier = Modifier) {
         style = TextStyle(
             color = Color.Black,
             fontWeight = FontWeight.Bold,
-            fontSize = 20.sp
+            fontSize = 20.sp,
+            textAlign = TextAlign.Center
         )
     )
 }
@@ -69,8 +73,8 @@ fun Link(
             onClick()
         },
         style = TextStyle(
-            color = Color.Blue,
-            fontWeight = FontWeight.W500,
+            color = BahamaBlue,
+            fontWeight = FontWeight.W700,
             fontSize = 16.sp
         )
     )

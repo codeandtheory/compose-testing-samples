@@ -41,7 +41,10 @@ fun HCToolBarScreen(
         HCToolBar(
             title = title,
             headerImage = headerImage,
-            leftIcon = leftIcon
+            leftIcon = leftIcon,
+            rightIcon = rightIcon,
+            onLeftIconClick = onLeftIconClick,
+            onRightIconClick = onRightIconClick
         )
 
         val state = remember { mutableStateOf("") }

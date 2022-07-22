@@ -11,11 +11,12 @@ sealed class ArticlesViewState(val screenTitle: String = "Articles") {
 }
 
 sealed class ArticleUserIntent {
+    class NavigateToDetails(val url: String) : ArticleUserIntent()
     object FetchArticles : ArticleUserIntent()
 }
 
 sealed class ArticlesNavEffect {
-    object NavigateToArticleDetail : ArticlesNavEffect()
+    class NavigateToArticleDetail(val url: String) : ArticlesNavEffect()
 
     class SnackMessage(val message: String) : ArticlesNavEffect()
 }

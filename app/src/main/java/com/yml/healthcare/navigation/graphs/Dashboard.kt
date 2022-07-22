@@ -6,6 +6,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import androidx.navigation.navigation
+import com.yml.core.constants.General.EMPTY_STRING
 import com.yml.core.constants.NetworkConstants
 import com.yml.core.navigation.AppNavigator
 import com.yml.healthcare.home.ui.view.ArticleListDestination
@@ -20,7 +21,8 @@ import com.yml.healthcare.ui.theme.NavigationCommand
 fun NavGraphBuilder.homeScreenGraph(navigator: AppNavigator) {
     navigation(
         startDestination = NavigationCommand.Dashboard.route,
-        route = GraphRoute.Home.route // to be used by the Nav host if keeping start destination, can redirect to this graph
+        route = GraphRoute.Home.route // to be used by the Nav host if keeping start destination,
+        // can redirect to this graph
     ) {
 
         composable(route = NavigationCommand.Dashboard.route) {
@@ -28,32 +30,32 @@ fun NavGraphBuilder.homeScreenGraph(navigator: AppNavigator) {
             HomeDestination(viewModel = viewModel, navigator)
         }
 
-        composable(NavigationCommand.Articles.route) {
+        composable(route = NavigationCommand.Articles.route) {
             val viewModel = hiltViewModel<ArticleViewModel>()
-            ArticleListDestination(viewModel = viewModel)
+            ArticleListDestination(viewModel = viewModel, navigator)
         }
 
         composable(
-            NavigationCommand.WebView.route,
+            route = NavigationCommand.WebView.route,
             arguments = listOf(
-                navArgument(ArgumentId.PATH) {
+                navArgument(name = ArgumentId.PATH) {
                     type = NavType.StringType
                 },
-                navArgument(ArgumentId.SCREEN_TITLE) {
+                navArgument(name = ArgumentId.SCREEN_TITLE) {
                     type = NavType.StringType
                     nullable = false
                     defaultValue = ""
                 }
             )
         ) {
-
             it.arguments?.let { args ->
                 HCWebView(
-                    url = NetworkConstants.API_END_POINT + args.getString(ArgumentId.PATH, ""),
-                    args.getString(ArgumentId.SCREEN_TITLE, "")
+                    url = NetworkConstants.API_END_POINT
+                            + args.getString(ArgumentId.PATH, EMPTY_STRING),
+                    title = args.getString(ArgumentId.SCREEN_TITLE, EMPTY_STRING),
+                    navigator = navigator
                 )
             }
-
         }
     }
 }

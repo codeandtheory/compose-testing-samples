@@ -15,4 +15,8 @@ class NavigationManager(
     override fun navigateToArticleDetail(url: String, title: String) {
         controller.navigate(NavigationCommand.WebView.route(url, title))
     }
+
+    override fun navigateBack() {
+        controller.popBackStack()
+    }
 }

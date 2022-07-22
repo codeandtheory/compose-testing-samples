@@ -1,6 +1,7 @@
 package com.yml.design.card
 
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -17,22 +18,27 @@ import com.yml.design.elements.Tag
 import com.yml.design.theme.HotPink
 import com.yml.design.theme.JetBlack
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HCard(
     modifier: Modifier = Modifier,
     title: String,
     description: String,
-    tags: List<String>? = null
+    tags: List<String>? = null,
+    onclick: () -> Unit = {}
 ) {
     Card(
-        modifier = modifier.padding(10.dp),
+        modifier = modifier
+            .padding(10.dp)
+            .clickable {
+                onclick()
+            },
         shape = RoundedCornerShape(topEnd = 10.dp, bottomEnd = 10.dp, bottomStart = 10.dp),
         elevation = 5.dp,
         backgroundColor = Color.White
     ) {
         Column(
-            modifier = Modifier.padding(10.dp)
+            modifier = Modifier
+                .padding(10.dp)
         ) {
             Text(
                 text = title,

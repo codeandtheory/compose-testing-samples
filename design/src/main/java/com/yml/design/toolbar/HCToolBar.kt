@@ -3,6 +3,7 @@ package com.yml.design.toolbar
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -45,6 +46,9 @@ fun HCToolBar(
         ) {
             if (Resource.NONE != leftIcon) {
                 Icon(
+                    modifier = Modifier.clickable {
+                        onLeftIconClick()
+                    },
                     painter = painterResource(id = leftIcon),
                     contentDescription = "" //TODO CDS
                 )
@@ -56,11 +60,14 @@ fun HCToolBar(
                     contentDescription = "" // TODO CDS
                 )
             } else {
-                Header(title)
+                Header(title, modifier = Modifier.weight(1.0f))
             }
 
             if (Resource.NONE != rightIcon) {
                 Icon(
+                    modifier = Modifier.clickable {
+                        onRightIconClick()
+                    },
                     painter = painterResource(id = leftIcon),
                     contentDescription = "" //TODO CDS
                 )
