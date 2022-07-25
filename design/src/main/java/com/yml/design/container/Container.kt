@@ -13,7 +13,6 @@ import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
 import com.yml.design.elements.Description
 import com.yml.design.theme.Green
-import com.yml.design.theme.Rose
 import com.yml.design.theme.Spearmint
 import com.yml.design.toolbar.HCToolBar
 
@@ -96,18 +95,4 @@ fun SnackMessage(
             textColor = Green
         )
     }
-}
-
-@Composable
-fun SuccessMessage(
-    description: MutableState<String>,
-) {
-    SnackMessage(description = description, bgColor = Spearmint)
-}
-
-@Composable
-fun ErrorMessage(
-    description: MutableState<String>,
-) {
-    SnackMessage(description = description, bgColor = Rose)
 }

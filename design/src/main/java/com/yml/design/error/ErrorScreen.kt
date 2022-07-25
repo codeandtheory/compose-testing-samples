@@ -1,21 +1,23 @@
 package com.yml.design.error
 
-import androidx.annotation.DrawableRes
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
 import com.yml.core.utils.isPresent
+import com.yml.design.CDConstants
 import com.yml.design.elements.Description
 import com.yml.design.elements.HCButton
 import com.yml.design.elements.SubHeading
-import com.yml.design.toolbar.HCToolBar
 
 @Composable
 fun ErrorWidget(
@@ -34,17 +36,29 @@ fun ErrorWidget(
         if (Resource.NONE != data.icon) {
             Icon(
                 painter = painterResource(id = data.icon),
-                contentDescription = "" //TODO CDS
+                contentDescription = CDConstants.ErrorScreenImage
             )
         }
-        SubHeading(text = data.title)
+        SubHeading(text = data.title,
+            Modifier
+                .semantics {
+                    contentDescription = CDConstants.ErrorScreenTitle
+                }
+                .padding(top = 10.dp))
 
-        Description(text = data.description)
+        Description(text = data.description,
+            Modifier
+                .semantics {
+                    contentDescription = CDConstants.ErrorScreenDescription
+                }
+                .padding(top = 10.dp))
 
         if (data.button.isPresent()) {
-            HCButton(title = data.button!!, onClick = ctaClick)
+            HCButton(title = data.button!!, onClick = ctaClick, modifier = Modifier
+                .semantics {
+                    contentDescription = CDConstants.ErrorScreenButton
+                }
+                .padding(top = 10.dp))
         }
-
     }
-
 }

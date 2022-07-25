@@ -1,6 +1,5 @@
 package com.yml.design.card
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -14,10 +13,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.yml.design.elements.SubHeading
 import com.yml.design.elements.Tag
 import com.yml.design.theme.HotPink
 import com.yml.design.theme.JetBlack
 
+/**
+ * TODO move the dimens to one place
+ */
 @Composable
 fun HCard(
     modifier: Modifier = Modifier,
@@ -32,7 +35,11 @@ fun HCard(
             .clickable {
                 onclick()
             },
-        shape = RoundedCornerShape(topEnd = 10.dp, bottomEnd = 10.dp, bottomStart = 10.dp),
+        shape = RoundedCornerShape(
+            topEnd = 10.dp,
+            bottomEnd = 10.dp,
+            bottomStart = 10.dp
+        ),
         elevation = 5.dp,
         backgroundColor = Color.White
     ) {
@@ -40,11 +47,8 @@ fun HCard(
             modifier = Modifier
                 .padding(10.dp)
         ) {
-            Text(
-                text = title,
-                modifier = Modifier,
-                style = TextStyle(color = HotPink, fontSize = 16.sp)
-            )
+
+            SubHeading(text = title)
 
             Text(
                 text = description,
@@ -66,7 +70,10 @@ fun HCard(
                 if (list.isNotEmpty()) {
                     Row {
                         list.subList(0, minOf(list.size, 2)).forEach {
-                            Tag(text = it)
+                            Tag(
+                                text = it,
+                                modifier = Modifier.padding(3.dp)
+                            )
                         }
                     }
                 }

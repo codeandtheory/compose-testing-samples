@@ -4,7 +4,6 @@ import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -15,8 +14,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
+import com.yml.design.CDConstants
 import com.yml.design.elements.Header
 
 
@@ -41,7 +43,10 @@ fun HCToolBar(
         Row(
             modifier = Modifier
                 .background(Color.White)
-                .padding(16.dp),
+                .padding(16.dp)
+                .semantics {
+                    contentDescription = CDConstants.toolBar
+                },
             verticalAlignment = Alignment.CenterVertically,
         ) {
             if (Resource.NONE != leftIcon) {
@@ -50,17 +55,24 @@ fun HCToolBar(
                         onLeftIconClick()
                     },
                     painter = painterResource(id = leftIcon),
-                    contentDescription = "" //TODO CDS
+                    contentDescription = CDConstants.toolBarLeftIcon
                 )
             }
             if (Resource.NONE != headerImage) {
                 Image(
                     modifier = Modifier.weight(1.0f),
                     painter = painterResource(headerImage),
-                    contentDescription = "" // TODO CDS
+                    contentDescription = CDConstants.toolBarImage
                 )
             } else {
-                Header(title, modifier = Modifier.weight(1.0f))
+
+                Header(
+                    title,
+                    modifier = Modifier
+                        .weight(1.0f)
+                        .semantics {
+                            contentDescription = CDConstants.toolBarTitle
+                        })
             }
 
             if (Resource.NONE != rightIcon) {
@@ -69,7 +81,7 @@ fun HCToolBar(
                         onRightIconClick()
                     },
                     painter = painterResource(id = leftIcon),
-                    contentDescription = "" //TODO CDS
+                    contentDescription = CDConstants.toolBarRightIcon
                 )
             }
         }
