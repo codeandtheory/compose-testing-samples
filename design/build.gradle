@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
-//    id 'shot'
+    id 'shot'
 }
 
 android {
@@ -13,15 +13,12 @@ android {
         minSdk 21
         targetSdk 32
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
 
-//        testApplicationId "com.yml.healthcare.design"
+        testInstrumentationRunner "com.karumi.shot.ShotTestRunner"
+        //Your Android library needs to be configured using an testApplicationId in your build.gradle defaultConfig block.
+        testApplicationId "com.yml.healthcare.test"
     }
-
-/*    shot {
-        applicationId = "com.myapp"
-    }*/
 
     buildTypes {
         release {
@@ -33,6 +30,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -43,6 +41,11 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion '1.2.0'
     }
+}
+
+// Issues : Unknown platform error occurred when running the UTP test suite. Please check logs for details.
+shot {
+    applicationId = "com.myapp"
 }
 
 dependencies {

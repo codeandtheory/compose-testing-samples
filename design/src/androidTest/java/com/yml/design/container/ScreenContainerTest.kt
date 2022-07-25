@@ -5,7 +5,6 @@ import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import com.karumi.shot.ScreenshotTest
 import com.yml.design.CDConstants
-import com.yml.design.theme.BahamaBlue
 import com.yml.design.theme.Spearmint
 import org.junit.Rule
 import org.junit.Test
