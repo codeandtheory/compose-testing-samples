@@ -6,16 +6,23 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.SnackbarHost
 import androidx.compose.material.SnackbarHostState
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
+import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
+import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.yml.core.constants.Resource
 import com.yml.design.elements.Description
+import com.yml.design.theme.BahamaBlue
 import com.yml.design.theme.Green
 import com.yml.design.theme.Spearmint
 import com.yml.design.toolbar.HCToolBar
-
 
 @Composable
 fun HCToolBarScreen(
@@ -59,7 +66,7 @@ fun HCToolBarScreen(
                 hostState = hostState,
                 snackbar = { data ->
                     SnackMessage(
-                        description = state,
+                        description = state.value,
                         bgColor = /*if (value.second) Spearmint else Rose*/ Spearmint
                     )
                 }
@@ -77,8 +84,8 @@ fun HCToolBarScreen(
 
 @Composable
 fun SnackMessage(
-    description: MutableState<String>,
-    bgColor: Color,
+    description: String,
+    bgColor: Color = BahamaBlue,
     contentColor: Color = Color.White
 ) {
     Card(
@@ -90,9 +97,31 @@ fun SnackMessage(
         shape = RoundedCornerShape(5.dp)
     ) {
         Description(
-            text = description.value,
+            text = description,
             modifier = Modifier.padding(5.dp),
             textColor = Green
         )
     }
+}
+
+
+@Preview
+@Composable
+@ShowkaseComposable("snack", "messages")
+fun SnackPreview(
+) {
+    SnackMessage(description = "Sample")
+}
+
+/**
+ * Todo test this Parameter provider
+ */
+class ParameterProvider : PreviewParameterProvider<String> {
+    override val count: Int
+        get() = super.count
+    override val values: Sequence<String>
+        get() = sequenceOf(
+            "Short Description",
+            "First Line \nSecond Line"
+        )
 }

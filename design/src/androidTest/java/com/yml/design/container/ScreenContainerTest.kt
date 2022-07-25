@@ -40,7 +40,7 @@ class ScreenContainerTest : ScreenshotTest {
     @Test
     fun verifySnackBar() {
         with(composeRule) {
-            val mockDesc = mutableStateOf("Snackbar description")
+            val mockDesc = "Snackbar description"
             setContent {
                 SnackMessage(description = mockDesc, bgColor = Spearmint)
             }

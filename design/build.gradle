@@ -79,6 +79,10 @@ dependencies {
     implementation "com.airbnb.android:showkase:1.0.0-beta13"
     kapt "com.airbnb.android:showkase-processor:1.0.0-beta13"
 
+    // To perform screenshot testing using showkase
+    androidTestImplementation "com.airbnb.android:showkase-screenshot-testing:1.0.0-beta13"
+    kaptAndroidTest "com.airbnb.android:showkase-processor:1.0.0-beta13"
+
 
     implementation "com.google.dagger:hilt-android:2.42"
     kapt "com.google.dagger:hilt-compiler:2.42"
