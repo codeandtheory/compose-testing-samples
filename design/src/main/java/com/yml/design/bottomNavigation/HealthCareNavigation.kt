@@ -5,9 +5,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.yml.design.CDConstants
+import com.yml.design.error.TestTag
 import com.yml.design.theme.BahamaBlue
-import com.yml.design.theme.JetBlack
 
 /**
  * Reusable Bottom Tab, Can be used from any nav host
@@ -35,7 +34,9 @@ fun <T : BottomNavDestination> HealthCareBottomNavigation(
                 alwaysShowLabel = false,
                 selectedContentColor = BahamaBlue,
                 unselectedContentColor = BahamaBlue.copy(alpha = ContentAlpha.disabled),
-                onClick = { navigateTo(it) }
+                onClick = { navigateTo(it)
+                    TestTag.ErrorScreenTitle
+                }
             )
         }
     }

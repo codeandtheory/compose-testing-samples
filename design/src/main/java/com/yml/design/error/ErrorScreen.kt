@@ -8,16 +8,23 @@ import androidx.compose.material.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
 import com.yml.core.utils.isPresent
-import com.yml.design.CDConstants
+import com.yml.design.R
 import com.yml.design.elements.Description
 import com.yml.design.elements.HCButton
 import com.yml.design.elements.SubHeading
+
+internal object TestTag {
+    const val ErrorScreenButton = "error_screen_button"
+    const val ErrorScreenTitle = "error_screen_title"
+    const val ErrorScreenDesc = "error_screen_description"
+    const val ErrorScreenImg = "error_screen_img"
+}
 
 @Composable
 fun ErrorWidget(
@@ -35,30 +42,31 @@ fun ErrorWidget(
 
         if (Resource.NONE != data.icon) {
             Icon(
+                modifier = Modifier.testTag(TestTag.ErrorScreenImg),
                 painter = painterResource(id = data.icon),
-                contentDescription = CDConstants.ErrorScreenImage
+                contentDescription = stringResource(R.string.cd_error_screen_image)
             )
         }
-        SubHeading(text = data.title,
+        SubHeading(
+            text = data.title,
             Modifier
-                .semantics {
-                    contentDescription = CDConstants.ErrorScreenTitle
-                }
-                .padding(top = 10.dp))
+                .padding(top = 10.dp)
+                .testTag(TestTag.ErrorScreenTitle)
+        )
 
-        Description(text = data.description,
+        Description(
+            text = data.description,
             Modifier
-                .semantics {
-                    contentDescription = CDConstants.ErrorScreenDescription
-                }
-                .padding(top = 10.dp))
+                .testTag(TestTag.ErrorScreenDesc)
+                .padding(top = 10.dp)
+        )
 
         if (data.button.isPresent()) {
-            HCButton(title = data.button!!, onClick = ctaClick, modifier = Modifier
-                .semantics {
-                    contentDescription = CDConstants.ErrorScreenButton
-                }
-                .padding(top = 10.dp))
+            HCButton(
+                title = data.button!!, onClick = ctaClick, modifier = Modifier
+                    .testTag(TestTag.ErrorScreenButton)
+                    .padding(top = 10.dp)
+            )
         }
     }
 }

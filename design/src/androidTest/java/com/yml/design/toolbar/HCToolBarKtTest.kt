@@ -3,7 +3,7 @@ package com.yml.design.toolbar
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import com.karumi.shot.ScreenshotTest
-import com.yml.design.CDConstants
+import com.yml.design.toolbar.TestTag.toolBarTitle
 import org.junit.Rule
 import org.junit.Test
 import com.yml.design.toolbar.ScreenShotNames as names
@@ -36,7 +36,7 @@ class HCToolBarKtTest : ScreenshotTest {
          */
         composeRule.onRoot().printToLog("HCToolBar")
 
-        composeRule.onNodeWithContentDescription(CDConstants.toolBarTitle)
+        composeRule.onNodeWithTag(toolBarTitle)
             .assertIsDisplayed()
             .assertHasNoClickAction()
             .assertTextEquals(mockTitle)
@@ -63,14 +63,14 @@ class HCToolBarKtTest : ScreenshotTest {
          */
         composeRule.onRoot().printToLog("HCToolBar")
 
-        composeRule.onNodeWithContentDescription(CDConstants.toolBarTitle)
+        composeRule.onNodeWithTag(toolBarTitle)
             .assertIsDisplayed()
             .assertHasNoClickAction()
             .assertTextEquals(mockTitle)
 
- /*       composeRule.onNodeWithContentDescription(CDConstants.toolBarLeftIcon)
-            .assertIsDisplayed()
-            .assertHasClickAction()*/
+        /*       composeRule.onNodeWithContentDescription(CDConstants.toolBarLeftIcon)
+                   .assertIsDisplayed()
+                   .assertHasClickAction()*/
 
         compareScreenshot(composeRule, names.ToolbarLeftIncTitle)
     }

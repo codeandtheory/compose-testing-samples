@@ -4,7 +4,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import com.karumi.shot.ScreenshotTest
-import com.yml.design.CDConstants
 import org.junit.Rule
 import org.junit.Test
 
@@ -26,7 +25,7 @@ class ErrorScreenKtTest : ScreenshotTest {
 
         composeRule.onRoot().printToLog("ErrorScreenWithTitleAndDescription")
 
-        composeRule.onNodeWithContentDescription(CDConstants.ErrorScreenTitle)
+        composeRule.onNodeWithTag(TestTag.ErrorScreenTitle)
             .assertIsDisplayed()
             .assertTextEquals(mockErrorData.title)
             .fetchSemanticsNode()
@@ -48,7 +47,7 @@ class ErrorScreenKtTest : ScreenshotTest {
 
         composeRule.onRoot().printToLog("ErrorScreenWithTitleAndDescription")
 
-        composeRule.onNodeWithContentDescription(CDConstants.ErrorScreenTitle)
+        composeRule.onNodeWithTag(TestTag.ErrorScreenTitle)
             .assertIsDisplayed()
             .assertTextEquals(mockErrorData.title)
             .fetchSemanticsNode()

@@ -13,14 +13,26 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
-import com.yml.design.CDConstants
+import com.yml.design.R
 import com.yml.design.elements.Header
+import com.yml.design.toolbar.TestTag.toolBar
+import com.yml.design.toolbar.TestTag.toolBarImage
+import com.yml.design.toolbar.TestTag.toolBarLeftIcon
+import com.yml.design.toolbar.TestTag.toolBarRightIcon
+import com.yml.design.toolbar.TestTag.toolBarTitle
 
+internal object TestTag {
+    const val toolBarLeftIcon = "toolBarLeftIcon"
+    const val toolBarImage = "toolBarImage"
+    const val toolBar = "toolBar"
+    const val toolBarTitle = "toolBarTitle"
+    const val toolBarRightIcon = "toolBarRightIcon"
+}
 
 @Composable
 fun HCToolBar(
@@ -44,44 +56,47 @@ fun HCToolBar(
             modifier = Modifier
                 .background(Color.White)
                 .padding(16.dp)
-                .semantics {
-                    contentDescription = CDConstants.toolBar
-                },
+                .testTag(toolBar),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             if (Resource.NONE != leftIcon) {
                 Icon(
-                    modifier = Modifier.clickable {
-                        onLeftIconClick()
-                    },
+                    modifier = Modifier
+                        .clickable {
+                            onLeftIconClick()
+                        }
+                        .testTag(toolBarLeftIcon),
                     painter = painterResource(id = leftIcon),
-                    contentDescription = CDConstants.toolBarLeftIcon
+                    contentDescription = stringResource(R.string.cd_toolbar_left_icon)
                 )
             }
             if (Resource.NONE != headerImage) {
                 Image(
-                    modifier = Modifier.weight(1.0f),
+                    modifier = Modifier
+                        .weight(1.0f)
+                        .testTag(toolBarImage),
                     painter = painterResource(headerImage),
-                    contentDescription = CDConstants.toolBarImage
+                    contentDescription = stringResource(R.string.cd_toolbar_header)
                 )
             } else {
 
                 Header(
                     title,
                     modifier = Modifier
+                        .testTag(toolBarTitle)
                         .weight(1.0f)
-                        .semantics {
-                            contentDescription = CDConstants.toolBarTitle
-                        })
+                )
             }
 
             if (Resource.NONE != rightIcon) {
                 Icon(
-                    modifier = Modifier.clickable {
-                        onRightIconClick()
-                    },
+                    modifier = Modifier
+                        .clickable {
+                            onRightIconClick()
+                        }
+                        .testTag(toolBarRightIcon),
                     painter = painterResource(id = leftIcon),
-                    contentDescription = CDConstants.toolBarRightIcon
+                    contentDescription = stringResource(R.string.cd_toolbar_right_icon)
                 )
             }
         }
