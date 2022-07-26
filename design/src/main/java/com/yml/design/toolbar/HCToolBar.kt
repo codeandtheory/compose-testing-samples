@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
 import com.yml.design.R
@@ -95,7 +96,7 @@ fun HCToolBar(
                             onRightIconClick()
                         }
                         .testTag(toolBarRightIcon),
-                    painter = painterResource(id = leftIcon),
+                    painter = painterResource(id = rightIcon),
                     contentDescription = stringResource(R.string.cd_toolbar_right_icon)
                 )
             }
@@ -104,3 +105,58 @@ fun HCToolBar(
 }
 
 
+@Preview(
+    name = "title-left",
+    group = "toolbar",
+    locale = "en"
+)
+/*@Preview(
+    name = "title-left-ar",
+    group = "toolbar",
+    locale = "ar"
+)*/
+@Composable
+fun PreviewToolBarTitleAndLeftIcon() {
+    HCToolBar(
+        title = stringResource(id = R.string.preview_home),
+        leftIcon = R.drawable.ic_menu_burger
+    )
+}
+
+@Preview(
+    name = "title",
+    group = "toolbar",
+    locale = "en"
+)
+/*@Preview(
+    name = "title-ar",
+    group = "toolbar",
+    locale = "ar"
+)*/
+@Composable
+fun PreviewToolBar() {
+    HCToolBar(
+        title = stringResource(id = R.string.preview_home),
+        rightIcon = R.drawable.ic_search,
+        leftIcon = R.drawable.ic_menu_burger
+    )
+}
+
+@Preview(
+    name = "image",
+    group = "toolbar",
+    locale = "en"
+)
+/*@Preview(
+    name = "image-ar",
+    group = "toolbar",
+    locale = "ar"
+)*/
+@Composable
+fun PreviewToolBarImage() {
+    HCToolBar(
+        headerImage = R.drawable.ic_profile,
+        rightIcon = R.drawable.ic_search,
+        leftIcon = R.drawable.ic_menu_burger
+    )
+}

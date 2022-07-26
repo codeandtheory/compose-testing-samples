@@ -7,11 +7,4 @@ data class ErrorData(
     val description: String,
     val icon: Int = Resource.NONE,
     val button: String? = null
-) {
-    companion object {
-        val emptyValue = ErrorData("", "")
-
-        //Todo mock data
-        val mockData = ErrorData("Offline", "Please check your internet connection!")
-    }
-}
+)

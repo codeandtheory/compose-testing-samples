@@ -9,8 +9,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.yml.design.R
 import com.yml.design.theme.HotPink
+import com.yml.design.toolbar.HCToolBar
 
 @Composable
 fun HCProgressBar() {
@@ -27,4 +30,19 @@ fun HCProgressBar() {
             strokeWidth = 2.dp
         )
     }
+}
+
+@Preview(
+    name = "progress",
+    group = "elements",
+    locale = "en"
+)
+/*@Preview(
+    name = "progress-ar",
+    group = "elements",
+    locale = "ar"
+)*/
+@Composable
+fun PreviewProgressBar() {
+    HCProgressBar()
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="cd_error_screen_image">test</string>
-    <string name="cd_toolbar_left_icon">Tool bar left button</string>
-    <string name="cd_toolbar_header">tool bar header</string>
-    <string name="cd_toolbar_right_icon">tool bar right button</string>
+    <string name="cd_error_screen_image" translatable="false">test</string>
+    <string name="cd_toolbar_left_icon" translatable="false">Tool bar left button</string>
+    <string name="cd_toolbar_header" translatable="false">tool bar header</string>
+    <string name="cd_toolbar_right_icon" translatable="false">tool bar right button</string>
 </resources>

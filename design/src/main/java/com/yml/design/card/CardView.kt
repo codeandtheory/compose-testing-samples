@@ -11,6 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.tooling.preview.Devices
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.yml.design.elements.SubHeading
@@ -56,16 +58,6 @@ fun HCard(
                 style = TextStyle(color = JetBlack, fontSize = 14.sp),
                 maxLines = 4
             )
-
-            /*  if (!tag.isNullOrBlank()) {
-                  Tag(
-                      text = tag,
-                      modifier = Modifier.padding(top = 10.dp),
-                      textColor = Rosewater,
-                      bgColor = Cream
-                  )
-              }*/
-
             tags?.let { list ->
                 if (list.isNotEmpty()) {
                     Row {
@@ -81,4 +73,40 @@ fun HCard(
         }
     }
 }
+
+/**
+ * @Preview is equivalent to @ShowkaseComposable
+ */
+@Preview(
+    name = "filled",
+    group = "card"
+)
+@Composable
+fun CardFilled() {
+    HCard(
+        title = "Here is the title",
+        description = "this is description \nSecond line continued... Some text\nThird Line",
+        tags = listOf("Blog", "Reports")
+    )
+}
+
+
+@Preview(
+    name = "no-tags",
+    group = "card"
+)
+/*@Preview(
+    name = "no-tags-scaled-rtl",
+    group = "card",
+    locale = "ar",
+    fontScale = 2f
+)*/
+@Composable
+fun CardNoTags() {
+    HCard(
+        title = "Here is the title",
+        description = "this is description \nSecond line continued... Some text\nThird Line",
+    )
+}
+
 
