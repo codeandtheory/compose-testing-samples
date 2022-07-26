@@ -3,14 +3,12 @@ buildscript {
         compose_version = '1.1.1'
     }
 
-    repositories {
-        google()
-        mavenCentral()
-    }
     dependencies {
         classpath 'com.karumi:shot:5.14.1'
         classpath 'com.google.dagger:hilt-android-gradle-plugin:2.42'
+        classpath 'app.cash.paparazzi:paparazzi-gradle-plugin:1.0.0'
     }
+
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id 'com.android.application' version '7.2.1' apply false
