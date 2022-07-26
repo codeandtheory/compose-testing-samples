@@ -1,5 +1,6 @@
 package com.yml.design.error
 
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,6 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Devices
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
 import com.yml.core.utils.isPresent
@@ -69,4 +72,17 @@ fun ErrorWidget(
             )
         }
     }
+}
+
+@Preview(
+    group = "error",
+    name = "errorWithAllFields",
+    showSystemUi = true,
+    showBackground = true,
+    device = Devices.PIXEL_4_XL,
+    uiMode = UI_MODE_NIGHT_YES
+)
+@Composable
+fun ErrorWidgetPreview() {
+    ErrorWidget(modifier = Modifier.fillMaxWidth(), data = ErrorData.mockData)
 }

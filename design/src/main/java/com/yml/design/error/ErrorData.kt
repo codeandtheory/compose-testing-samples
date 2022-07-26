@@ -1,6 +1,7 @@
 package com.yml.design.error
 
 import com.yml.core.constants.Resource
+import com.yml.design.R
 
 data class ErrorData(
     val title: String,
@@ -12,6 +13,11 @@ data class ErrorData(
         val emptyValue = ErrorData("", "")
 
         //Todo mock data
-        val mockData = ErrorData("Offline", "Please check your internet connection!")
+        val mockData = ErrorData(
+            "Offline",
+            "Please check your internet connection!",
+            icon = R.drawable.ic_home,
+            button = "Retry"
+        )
     }
 }

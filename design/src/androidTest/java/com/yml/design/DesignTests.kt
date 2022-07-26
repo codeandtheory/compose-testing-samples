@@ -29,7 +29,7 @@ abstract class DesignTests : ShowkaseScreenshotTest, ScreenshotTest {
         screenshotType: ShowkaseScreenshotType,
         screenshotBitmap: Bitmap
     ) {
-        compareScreenshot(screenshotBitmap, "$group - $name")
+        compareScreenshot(screenshotBitmap, "${group}_${name}")
     }
 
 }
