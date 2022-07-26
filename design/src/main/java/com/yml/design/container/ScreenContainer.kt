@@ -12,15 +12,20 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.yml.core.constants.Resource
+import com.yml.design.R
 import com.yml.design.elements.Description
-import com.yml.design.theme.BahamaBlue
+import com.yml.design.error.ErrorData
+import com.yml.design.error.ErrorWidget
+import com.yml.design.error.ErrorWidgetPreview
+import com.yml.design.snackbar.SnackMessage
 import com.yml.design.theme.Green
+import com.yml.design.theme.Rose
 import com.yml.design.theme.Spearmint
 import com.yml.design.toolbar.HCToolBar
 
@@ -67,7 +72,8 @@ fun HCToolBarScreen(
                 snackbar = { data ->
                     SnackMessage(
                         description = state.value,
-                        bgColor = /*if (value.second) Spearmint else Rose*/ Spearmint
+                        bgColor = Spearmint, // to handle error snack variant
+                        contentColor = Green
                     )
                 }
             )
@@ -82,46 +88,30 @@ fun HCToolBarScreen(
     }
 }
 
+@Preview(
+    name = "toolbar-screen",
+    group = "container",
+    locale = "en"
+)
+/*@Preview(
+    name = "toolbar-screen_ar",
+    group = "container",
+    locale = "ar"
+)*/
 @Composable
-fun SnackMessage(
-    description: String,
-    bgColor: Color = BahamaBlue,
-    contentColor: Color = Color.White
-) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp),
-        backgroundColor = bgColor,
-        elevation = 3.dp,
-        shape = RoundedCornerShape(5.dp)
-    ) {
-        Description(
-            text = description,
-            modifier = Modifier.padding(5.dp),
-            textColor = Green
+fun PreviewFullScreen() {
+    HCToolBarScreen(
+        title = "Search",
+        leftIcon = R.drawable.ic_menu_burger
+    ) { modifier, _ ->
+        ErrorWidget(
+            modifier = modifier.fillMaxSize(),
+            data = ErrorData(
+                title = stringResource(id = R.string.preview_error_title),
+                description = stringResource(id = R.string.preview_error_description),
+                button = stringResource(id = R.string.preview_retry),
+                icon = R.drawable.ic_home
+            )
         )
     }
-}
-
-
-@Preview
-@Composable
-@ShowkaseComposable("snack", "messages")
-fun SnackPreview(
-) {
-    SnackMessage(description = "Sample")
-}
-
-/**
- * Todo test this Parameter provider
- */
-class ParameterProvider : PreviewParameterProvider<String> {
-    override val count: Int
-        get() = super.count
-    override val values: Sequence<String>
-        get() = sequenceOf(
-            "Short Description",
-            "First Line \nSecond Line"
-        )
 }

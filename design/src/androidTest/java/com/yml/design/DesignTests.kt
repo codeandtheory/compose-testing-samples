@@ -31,5 +31,4 @@ abstract class DesignTests : ShowkaseScreenshotTest, ScreenshotTest {
     ) {
         compareScreenshot(screenshotBitmap, "${group}_${name}")
     }
-
 }
