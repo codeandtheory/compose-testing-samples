@@ -96,7 +96,6 @@ class HomeViewModel @Inject constructor(val homeUseCase: HomeUseCase) : ViewMode
                 }
             }
 
-            else -> {}
         }
     }
 

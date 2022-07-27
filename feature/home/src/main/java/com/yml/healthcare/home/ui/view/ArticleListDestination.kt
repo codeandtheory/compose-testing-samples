@@ -56,7 +56,6 @@ private fun ArticleListDestination(
                 is ArticlesNavEffect.SnackMessage -> {
                     snackMessage(effect.message)
                 }
-                else -> {}
             }
         }
 
@@ -85,7 +84,6 @@ private fun ArticleListDestination(
             is ArticlesViewState.UnInitialized -> {
                 userIntent(ArticleUserIntent.FetchArticles)
             }
-            else -> {}
         }
     }
 }

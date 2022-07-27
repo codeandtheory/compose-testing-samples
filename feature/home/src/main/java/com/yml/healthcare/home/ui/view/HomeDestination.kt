@@ -62,7 +62,6 @@ private fun HomeDestination(
                 is HomeEffect.SnackMessage -> {
                     snackMessage(homeEffect.message)
                 }
-                else -> {}
             }
         }
 
@@ -91,7 +90,6 @@ private fun HomeDestination(
             is HomeViewState.UnInitialized -> {
                 userIntent(HomeUserIntent.FetchHomeData)
             }
-            else -> {}
         }
     }
 }
