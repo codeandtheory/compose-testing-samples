@@ -45,7 +45,28 @@ android {
 
 // Issues : Unknown platform error occurred when running the UTP test suite. Please check logs for details.
 shot {
-    applicationId = "com.myapp"
+    applicationId = "com.myapp" // Check if it is really needed, as per docs it is required for AGP 7.1 +
+
+    /**
+     * Can skip the instrumentation tests by making it false
+     */
+    runInstrumentation = true
+
+    /**
+     * To run tests on multiple connected devices to reduce the time
+     * devices should have same OS, resolution and density
+     * required composer gradle plugin - Additional
+     */
+    useComposer = false
+
+    /**
+     * Percentage value of tolerance
+     *
+     * tolerance 100 means all the tests will be executed to SUCCESS even if they were supposed to be failing
+     * value should be calculated accordingly
+     */
+    tolerance =  0.1
+
 }
 
 dependencies {
