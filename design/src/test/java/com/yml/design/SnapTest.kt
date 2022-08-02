@@ -90,9 +90,10 @@ class SnapTest {
         @TestParameter(valuesProvider = DeviceConfigs::class)
         devicePreview: DevicePreview,
         @TestParameter(valuesProvider = LayoutDirections::class)
-        directions: LayoutDirection // Wrapper is not necessary as it is enum
+        directions: LayoutDirection, // Wrapper is not necessary as it is enum
+        @TestParameter(value = [BuildConfig.BUILD_TYPE])
+        buildType: String
     ) {
-
         paparazzi.unsafeUpdateConfig(devicePreview.deviceConfig)
         paparazzi.snapshot {
             CompositionLocalProvider(
