@@ -49,6 +49,9 @@ fun SnackSuccessPreview() =
     SnackMessage(description = stringResource(id = R.string.preview_snack_success))
 
 
+/**
+ * Multiple previews are supported android studio dolphin onwards
+ */
 @Composable
 /*@Preview(
     name = "error-rtl",

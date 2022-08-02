@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'shot'
+    id 'app.cash.paparazzi'
 }
 
 android {
@@ -110,4 +111,10 @@ dependencies {
 
     // Design dependency will also add core dependency
     api project(':core')
+
+    /**
+     * Paparazzi + Showkase
+     */
+    testImplementation "com.airbnb.android:showkase-screenshot-testing:1.0.0-beta13"
+    testImplementation "com.google.testparameterinjector:test-parameter-injector:1.8"
 }
