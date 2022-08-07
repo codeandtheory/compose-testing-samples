@@ -6,20 +6,20 @@
    Screens : Splash screen, Home Screen, Article / Blog listing Screen, Article or Blog Details Screen which is a web view
    
 ## Architecture :
-   MultiModule Application with MVI Clean architecture pattern
-   JetPack Compose for UI layer
-   Retrofit for making network calls
-   Dagger Hilt for DI
-   Coroutines + Flows
-   Shot, Showkase and Paparazzi are used for screenshot testing
+- MultiModule Application with MVI Clean architecture pattern
+- JetPack Compose for UI layer
+- Retrofit for making network calls
+- Dagger Hilt for DI
+- Coroutines + Flows
+- Shot, Showkase and Paparazzi are used for screenshot testing
 
-  ## Module structure
-  - `app` combines all `feature` modules and decides navigation between pages
-  - `design` contains reusable component UIs. Primarily screenshot testing is done here This involves `showkase`+`paparazzi` tests as unit tests and `showkase` + `shot` as instrumentation tests
-  - `core` Has retrofit setup and common utility classes
-  - `feature` module contains multiple stand alone features which depend on `design` and `core` modules. Only Paparazzi tests are written here
-      - `launcher`
-      - `home` has home, article / blog listing and detail screens
+## Module structure
+- `app` combines all `feature` modules and decides navigation between pages
+- `design` contains reusable component UIs. Primarily screenshot testing is done here This involves `showkase`+`paparazzi` tests as unit tests and `showkase` + `shot` as instrumentation tests
+- `core` Has retrofit setup and common utility classes
+- `feature` module contains multiple stand alone features which depend on `design` and `core` modules. Only Paparazzi tests are written here
+    - `launcher`
+    - `home` has home, article / blog listing and detail screens
 
 ## Running Tests
    To use Showkase along with other screenshot testing libraries such as Shot and Paparazzi, write 
@@ -43,7 +43,7 @@ list of showkase preview components are injected into a single test method, wher
 - To run tests run following command
    - `./gradlew :design:recordPaparazzi` will record the screenshots and place them in the test package
    - `./gradlew :design:verifyPaparazzi` verify against the recorded screens.
-   - Refer `SnapTest.kt` in test package
+- Refer `SnapTest.kt` in test package
 
 
 ## Configurations
