@@ -45,6 +45,21 @@ list of showkase preview components are injected into a single test method, wher
    - `./gradlew :design:verifyPaparazzi` verify against the recorded screens.
 - Refer `SnapTest.kt` in test package
 
+- Sample Screenshots : 
+
+Card variants :
+
+![com yml design_SnapTest_sample card_filled,PIXEL_4_XL,Ltr,debug](https://user-images.githubusercontent.com/102218374/183363436-7395e86d-ac49-4416-9dde-43a992376aed.png)
+![com yml design_SnapTest_sample card_filled,PIXEL_4_XL,Rtl,debug](https://user-images.githubusercontent.com/102218374/183363499-ccc9a4bd-79bc-4b07-890e-c01e0a17aadc.png)
+![com yml design_SnapTest_sample card_filled,NEXUS_5_LAND,Ltr,debug](https://user-images.githubusercontent.com/102218374/183363530-154bbae9-f726-4117-8e1c-41f744bbac78.png)
+![com yml design_SnapTest_sample card_filled,NEXUS_5_LAND,Rtl,debug](https://user-images.githubusercontent.com/102218374/183363541-c204014b-d706-4e1f-ac26-164d777e6ef1.png)
+
+
+###### Paparazzi :
+- feature module contains paparazzi only tests.
+- These are unit tests, and screenshots are taken by invoking each compose methods seperately.
+- Sample Screenshots
+
 
 ## Configurations
 
