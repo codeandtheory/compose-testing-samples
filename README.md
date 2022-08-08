@@ -59,6 +59,10 @@ Card variants :
 - feature module contains paparazzi only tests.
 - These are unit tests, and screenshots are taken by invoking each compose methods seperately.
 - Sample Screenshots
+![com yml healthcare home ui view_LoadedHomeKtTest_verify home screen with articles and blogs_home_fully_loaded](https://user-images.githubusercontent.com/102218374/183365810-ceb7e892-7b68-47c1-ab9b-2f70f90bf680.png)
+![com yml healthcare home ui view_ArticleListScreenKtTest_verify article list loaded_articles_loaded](https://user-images.githubusercontent.com/102218374/183365883-89b37d56-a3ed-449e-a290-28c72466c2e4.png)
+![com yml launcher_SplashDestinationKtTest_record splash screen and verify_splash](https://user-images.githubusercontent.com/102218374/183366176-9253d1bb-aeba-4d68-856f-ed66910f0f8b.png)
+
 
 
 ## Configurations
