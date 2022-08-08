@@ -17,6 +17,8 @@ sealed class HomeUserIntent {
     object FetchHomeData : HomeUserIntent()
 
     object ViewAllArticles : HomeUserIntent()
+
+    object ViewShowkaseBrowser : HomeUserIntent()
 }
 
 sealed class HomeEffect {
@@ -25,4 +27,6 @@ sealed class HomeEffect {
     object ViewAllArticles : HomeEffect()
 
     class SnackMessage(val message: String) : HomeEffect()
+
+    object ViewShowkaseBrowser : HomeEffect()
 }

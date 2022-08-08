@@ -9,8 +9,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.yml.design.card.HCard
+import com.yml.design.elements.HCButton
 import com.yml.design.elements.Header
 import com.yml.design.elements.Link
+import com.yml.healthcare.home.BuildConfig
 import com.yml.healthcare.home.domain.model.HomeDataModel
 import com.yml.healthcare.home.ui.viewmodel.home.HomeUserIntent
 
@@ -91,6 +93,15 @@ fun LoadedHomeScreen(
                         }
                     }
                 }
+            }
+        }
+
+        if (BuildConfig.DEBUG) {
+            HCButton(
+                modifier = Modifier.padding(top = 10.dp),
+                title = "View Showkase Browser"
+            ) {
+                userIntent(HomeUserIntent.ViewShowkaseBrowser)
             }
         }
     }

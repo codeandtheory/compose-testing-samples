@@ -1,7 +1,9 @@
 package com.yml.healthcare.navigation
 
+import android.content.Context
 import androidx.navigation.NavHostController
 import com.yml.core.navigation.AppNavigator
+import com.yml.design.browserIntent
 import com.yml.healthcare.ui.theme.NavigationCommand
 
 class NavigationManager(
@@ -18,5 +20,9 @@ class NavigationManager(
 
     override fun navigateBack() {
         controller.popBackStack()
+    }
+
+    override fun navigateToShowKaseBrowser(context: Context) {
+        context.startActivity(browserIntent(context))
     }
 }
