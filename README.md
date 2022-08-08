@@ -35,6 +35,19 @@
                present in the module root folder
       - `./gradlew :design:executeScreenshotTests` This will verify te screenshots against the recorded ones and gives error description if not matching
   - Refer `DesignTests.kt` in androidTest package
+  - Sample Screenshots
+
+![com yml design DesignTests_ShowkaseCodegen_toolbar_title](https://user-images.githubusercontent.com/102218374/183367914-ee481c6b-6f10-45b6-81dc-ec1d7168b2d9.png)
+  
+![com yml design DesignTests_ShowkaseCodegen_error_error-screen](https://user-images.githubusercontent.com/102218374/183367967-592b61d1-3b4a-44b1-b02c-49f0fb5b11ab.png)
+
+![com yml design DesignTests_ShowkaseCodegen_card_filled](https://user-images.githubusercontent.com/102218374/183368041-47b66296-f2b6-488b-93a7-a51eb38e256a.png)
+
+![com yml design DesignTests_ShowkaseCodegen_bottom_bar_home_selected](https://user-images.githubusercontent.com/102218374/183368076-1e38f533-2714-45f1-8aa9-f8c0acfbe4a9.png)
+
+
+![com yml design DesignTests_ShowkaseCodegen_Logo Colors_BahamaBlue](https://user-images.githubusercontent.com/102218374/183368516-b0f66956-950f-461d-9ca8-ab5327690ca2.png)
+
 
    ###### Showkase + Paparazzi
    - Showkase gives Preview components into the unitTest (dependency has to be added, see the configuration below), using Googles test parameter injection these
