@@ -8,6 +8,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import com.yml.core.navigation.AppNavigator
 import com.yml.design.container.HCToolBarScreen
 import com.yml.design.error.ErrorWidget
@@ -49,6 +50,8 @@ private fun HomeDestination(
         modifier = Modifier.background(color = Color.White)
     ) { modifier, snackMessage ->
 
+        val context = LocalContext.current
+
         fun handleEffects(homeEffect: HomeEffect) {
             when (homeEffect) {
                 is HomeEffect.NavigateToArticleDetail -> {
@@ -62,7 +65,9 @@ private fun HomeDestination(
                 is HomeEffect.SnackMessage -> {
                     snackMessage(homeEffect.message)
                 }
-                else -> {}
+                is HomeEffect.ViewShowkaseBrowser -> {
+                    navController.navigateToShowKaseBrowser(context)
+                }
             }
         }
 
@@ -91,7 +96,6 @@ private fun HomeDestination(
             is HomeViewState.UnInitialized -> {
                 userIntent(HomeUserIntent.FetchHomeData)
             }
-            else -> {}
         }
     }
 }

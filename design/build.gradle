@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'shot'
+    id 'app.cash.paparazzi'
 }
 
 android {
@@ -12,8 +14,11 @@ android {
         minSdk 21
         targetSdk 32
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+
+        testInstrumentationRunner "com.karumi.shot.ShotTestRunner"
+        //Your Android library needs to be configured using an testApplicationId in your build.gradle defaultConfig block.
+        testApplicationId "com.yml.healthcare.test"
     }
 
     buildTypes {
@@ -26,6 +31,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -36,6 +42,32 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion '1.2.0'
     }
+}
+
+// Issues : Unknown platform error occurred when running the UTP test suite. Please check logs for details.
+shot {
+    applicationId = "com.myapp" // Check if it is really needed, as per docs it is required for AGP 7.1 +
+
+    /**
+     * Can skip the instrumentation tests by making it false
+     */
+    runInstrumentation = true
+
+    /**
+     * To run tests on multiple connected devices to reduce the time
+     * devices should have same OS, resolution and density
+     * required composer gradle plugin - Additional
+     */
+    useComposer = false
+
+    /**
+     * Percentage value of tolerance
+     *
+     * tolerance 100 means all the tests will be executed to SUCCESS even if they were supposed to be failing
+     * value should be calculated accordingly
+     */
+    tolerance =  0.1
+
 }
 
 dependencies {
@@ -58,6 +90,7 @@ dependencies {
     implementation "androidx.compose.ui:ui:1.1.1"
     implementation "androidx.compose.material:material:1.1.1"
     implementation "androidx.compose.ui:ui-tooling-preview:1.1.1"
+
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.1.1"
     debugImplementation "androidx.compose.ui:ui-tooling:1.1.1"
     debugImplementation "androidx.compose.ui:ui-test-manifest:1.1.1"
@@ -68,10 +101,20 @@ dependencies {
     implementation "com.airbnb.android:showkase:1.0.0-beta13"
     kapt "com.airbnb.android:showkase-processor:1.0.0-beta13"
 
+    // To perform screenshot testing using showkase
+    androidTestImplementation "com.airbnb.android:showkase-screenshot-testing:1.0.0-beta13"
+    kaptAndroidTest "com.airbnb.android:showkase-processor:1.0.0-beta13"
+
 
     implementation "com.google.dagger:hilt-android:2.42"
     kapt "com.google.dagger:hilt-compiler:2.42"
 
     // Design dependency will also add core dependency
     api project(':core')
+
+    /**
+     * Paparazzi + Showkase
+     */
+    testImplementation "com.airbnb.android:showkase-screenshot-testing:1.0.0-beta13"
+    testImplementation "com.google.testparameterinjector:test-parameter-injector:1.8"
 }

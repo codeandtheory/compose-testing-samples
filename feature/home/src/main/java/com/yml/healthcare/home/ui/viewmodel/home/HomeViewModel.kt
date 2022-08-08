@@ -96,7 +96,9 @@ class HomeViewModel @Inject constructor(val homeUseCase: HomeUseCase) : ViewMode
                 }
             }
 
-            else -> {}
+            HomeUserIntent.ViewShowkaseBrowser -> {
+                sendNavEffect { HomeEffect.ViewShowkaseBrowser }
+            }
         }
     }
 

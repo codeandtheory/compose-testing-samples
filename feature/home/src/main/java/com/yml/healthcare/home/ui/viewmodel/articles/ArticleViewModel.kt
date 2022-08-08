@@ -83,6 +83,10 @@ class ArticleViewModel @Inject constructor(val repository: HomeRepository) : Vie
                     }
                 }
             }
+
+            is ArticleUserIntent.NavigateToDetails -> {
+                sendNavEffect { ArticlesNavEffect.NavigateToArticleDetail(intent.url) }
+            }
             else -> {}
         }
     }
