@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import com.yml.core.constants.Resource
 import com.yml.design.R
 import com.yml.design.elements.Header
+import com.yml.design.theme.JetBlack
 import com.yml.design.toolbar.TestTag.toolBar
 import com.yml.design.toolbar.TestTag.toolBarImage
 import com.yml.design.toolbar.TestTag.toolBarLeftIcon
@@ -51,11 +52,12 @@ fun HCToolBar(
     Surface(
         modifier
             .fillMaxWidth(),
+        color = Color.White,
+        contentColor = JetBlack,
         elevation = 6.dp
     ) {
         Row(
             modifier = Modifier
-                .background(Color.White)
                 .padding(16.dp)
                 .testTag(toolBar),
             verticalAlignment = Alignment.CenterVertically,
