@@ -22,6 +22,18 @@
     - `home` has home, article / blog listing and detail screens
 
 ## Running Tests
+
+   Device specifications and respective commands
+   ###### Pixel 4 XL API 33
+   - 6.3",  1440x3040, xxhdpi, API 33
+   - ./gradlew executeScreenshotTests -PdirectorySuffix=Pixel4XL
+   ./gradlew executeScreenshotTests -Precord -PdirectorySuffix=Pixel4XL
+
+   ###### Pixel 5
+   - 6.0'', 1080x2340, xxhdpi, Android R
+   - ./gradlew executeScreenshotTests -PdirectorySuffix=Pixel5
+   - ./gradlew executeScreenshotTests -Precord -PdirectorySuffix=Pixel5
+   
    To use Showkase along with other screenshot testing libraries such as Shot and Paparazzi, write 
    @Preview composables (Or showkase has @ShowkaseComposable annotation for the same purpose)
 
