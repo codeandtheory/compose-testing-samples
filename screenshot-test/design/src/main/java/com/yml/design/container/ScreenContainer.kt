@@ -2,6 +2,7 @@ package com.yml.design.container
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.SnackbarHost
 import androidx.compose.material.SnackbarHostState
 import androidx.compose.runtime.Composable
@@ -63,9 +64,7 @@ fun HCToolBarScreen(
                 hostState = hostState,
                 snackbar = { data ->
                     SnackMessage(
-                        description = state.value,
-                        bgColor = Spearmint, // to handle error snack variant
-                        contentColor = Green
+                        description = state.value
                     )
                 }
             )

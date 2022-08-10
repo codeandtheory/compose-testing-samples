@@ -71,3 +71,14 @@ val DoveGray = Color(0xFF656565)
 
 @ShowkaseColor(group = "Logo Colors")
 val MineShaft = Color(0xFF2C2C2C)
+
+
+/**
+ * Dark colors
+ */
+
+val ReadModeWhite = Color(0xFFC9C49C)
+
+val ReadModeDark1 = Color(0xFF3E4232)
+
+val ReadModeDark2 = Color(0xFF3E4233)

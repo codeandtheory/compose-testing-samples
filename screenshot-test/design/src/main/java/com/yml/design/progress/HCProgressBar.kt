@@ -20,13 +20,11 @@ fun HCProgressBar() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color.White.copy(alpha = 0.5f))
     ) {
         CircularProgressIndicator(
             modifier = Modifier
                 .size(50.dp)
                 .align(Alignment.Center),
-            color = HotPink,
             strokeWidth = 2.dp
         )
     }

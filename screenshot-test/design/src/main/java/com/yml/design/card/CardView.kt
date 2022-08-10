@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -42,20 +43,22 @@ fun HCard(
             bottomEnd = 10.dp,
             bottomStart = 10.dp
         ),
-        elevation = 5.dp,
-        backgroundColor = Color.White
+        elevation = 5.dp
     ) {
         Column(
             modifier = Modifier
                 .padding(10.dp)
         ) {
 
-            SubHeading(text = title)
+            SubHeading(
+                text = title,
+                color = MaterialTheme.colors.primary
+            )
 
             Text(
                 text = description,
                 modifier = Modifier.padding(top = 10.dp),
-                style = TextStyle(color = JetBlack, fontSize = 14.sp),
+                style = TextStyle(fontSize = 14.sp),
                 maxLines = 4
             )
             tags?.let { list ->

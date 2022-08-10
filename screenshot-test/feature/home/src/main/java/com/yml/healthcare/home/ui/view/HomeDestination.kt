@@ -47,7 +47,6 @@ private fun HomeDestination(
         title = state.screenTitle,
         leftIcon = com.yml.design.R.drawable.ic_menu_burger,
         headerImage = R.drawable.health_care_gov,
-        modifier = Modifier.background(color = Color.White)
     ) { modifier, snackMessage ->
 
         val context = LocalContext.current
@@ -82,7 +81,6 @@ private fun HomeDestination(
                 ErrorWidget(
                     data = state.error, modifier = Modifier
                         .fillMaxSize()
-                        .background(Color.White)
                 )
             }
             is HomeViewState.InitialLoading -> {

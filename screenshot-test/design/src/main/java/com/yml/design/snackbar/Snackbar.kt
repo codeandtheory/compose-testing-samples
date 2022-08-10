@@ -4,6 +4,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.LocalContentColor
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -14,16 +16,14 @@ import androidx.compose.ui.unit.dp
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.yml.design.R
 import com.yml.design.elements.Description
-import com.yml.design.theme.Green
+import com.yml.design.theme.HealthCareTheme
 import com.yml.design.theme.Rose
-import com.yml.design.theme.Spearmint
 
 
 @Composable
 fun SnackMessage(
     description: String,
-    bgColor: Color = Spearmint,
-    contentColor: Color = Green
+    bgColor: Color = MaterialTheme.colors.primary
 ) {
     Card(
         modifier = Modifier
@@ -36,7 +36,7 @@ fun SnackMessage(
         Description(
             text = description,
             modifier = Modifier.padding(5.dp),
-            textColor = contentColor
+            textColor = LocalContentColor.current.copy(.85f)
         )
     }
 }
@@ -45,8 +45,9 @@ fun SnackMessage(
 @Preview
 @Composable
 @ShowkaseComposable("success", "snack")
-fun SnackSuccessPreview() =
+fun SnackSuccessPreview() = HealthCareTheme {
     SnackMessage(description = stringResource(id = R.string.preview_snack_success))
+}
 
 
 /**
@@ -64,8 +65,6 @@ fun SnackSuccessPreview() =
 )
 fun SnackErrorPreview() = SnackMessage(
     description = stringResource(id = R.string.preview_snack_error),
-    contentColor = Color.Red,
-    bgColor = Rose
 )
 
 

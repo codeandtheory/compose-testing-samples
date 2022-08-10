@@ -4,8 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.ContentAlpha
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -25,7 +24,6 @@ fun Header(text: String, modifier: Modifier = Modifier) {
         text = text,
         modifier,
         style = TextStyle(
-            color = Color.Black,
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp,
             textAlign = TextAlign.Center
@@ -37,7 +35,7 @@ fun Header(text: String, modifier: Modifier = Modifier) {
 fun SubHeading(
     text: String,
     modifier: Modifier = Modifier,
-    color: Color = BahamaBlue
+    color: Color = LocalContentColor.current
 ) {
     Text(
         text = text,
@@ -54,7 +52,7 @@ fun SubHeading(
 fun Description(
     text: String,
     modifier: Modifier = Modifier,
-    textColor: Color = JetBlack.copy(ContentAlpha.disabled)
+    textColor: Color = MaterialTheme.colors.onSurface.copy(ContentAlpha.medium)
 ) {
     Text(
         text = text,
@@ -79,7 +77,6 @@ fun Link(
             onClick()
         },
         style = TextStyle(
-            color = BahamaBlue,
             fontWeight = FontWeight.W700,
             fontSize = 16.sp
         )
@@ -90,8 +87,8 @@ fun Link(
 fun Tag(
     modifier: Modifier = Modifier,
     text: String,
-    bgColor: Color = BahamaBlue.copy(alpha = .75f),
-    textColor: Color = Color.White
+    bgColor: Color = MaterialTheme.colors.primary,
+    textColor: Color = contentColorFor(backgroundColor = bgColor)
 ) {
     Text(
         text = text,

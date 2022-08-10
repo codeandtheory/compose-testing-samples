@@ -41,7 +41,6 @@ private fun ArticleListDestination(
     HCToolBarScreen(
         title = state.screenTitle,
         leftIcon = com.yml.design.R.drawable.ic_angle_left,
-        modifier = Modifier.background(color = Color.White),
         onLeftIconClick = {
             navigator.navigateBack()
         }
@@ -70,7 +69,6 @@ private fun ArticleListDestination(
                 ErrorWidget(
                     data = state.error, modifier = Modifier
                         .fillMaxSize()
-                        .background(Color.White)
                 )
             }
             is ArticlesViewState.InitialLoading -> {

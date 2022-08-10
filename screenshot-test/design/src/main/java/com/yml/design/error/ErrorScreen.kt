@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,6 +22,7 @@ import com.yml.design.R
 import com.yml.design.elements.Description
 import com.yml.design.elements.HCButton
 import com.yml.design.elements.SubHeading
+import com.yml.design.theme.HealthCareTheme
 
 internal object TestTag {
     const val ErrorScreenButton = "error_screen_button"
@@ -54,7 +56,8 @@ fun ErrorWidget(
             text = data.title,
             Modifier
                 .padding(top = 10.dp)
-                .testTag(TestTag.ErrorScreenTitle)
+                .testTag(TestTag.ErrorScreenTitle),
+            color = MaterialTheme.colors.primary
         )
 
         Description(
