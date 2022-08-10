@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.airbnb.android:showkase-screenshot-testing:1.0.0-beta13@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2ff2fc31c874364f492783e9d535cda/transformed/showkase-screenshot-testing-1.0.0-beta13/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/dbdf7d5020e501084e8780f0f120c262/transformed/showkase-screenshot-testing-1.0.0-beta13/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dbdf7d5020e501084e8780f0f120c262/transformed/showkase-screenshot-testing-1.0.0-beta13/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dbdf7d5020e501084e8780f0f120c262/transformed/showkase-screenshot-testing-1.0.0-beta13/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.airbnb.android/showkase-screenshot-testing/1.0.0-beta13/2550b5ecfaf4035e87a833f317a1710ece105046/showkase-screenshot-testing-1.0.0-beta13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.airbnb.android/showkase-screenshot-testing/1.0.0-beta13/bb5f783604ba2d181a7caafaf288f9e5768fce5a/showkase-screenshot-testing-1.0.0-beta13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
