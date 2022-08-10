@@ -1,14 +1,15 @@
 package com.yml.design.bottomNavigation
 //TODO https://www.flaticon.com/uicons
-import androidx.compose.material.*
+import androidx.compose.material.BottomNavigation
+import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yml.design.R
 import com.yml.design.error.TestTag
-import com.yml.design.theme.BahamaBlue
 
 /**
  * Reusable Bottom Tab, Can be used from any nav host

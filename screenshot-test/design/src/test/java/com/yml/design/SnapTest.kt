@@ -1,6 +1,5 @@
 package com.yml.design
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.wrapContentHeight
@@ -8,7 +7,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
@@ -91,19 +89,20 @@ class SnapTest {
         devicePreview: DevicePreview,
         @TestParameter(valuesProvider = LayoutDirections::class)
         directions: LayoutDirection, // Wrapper is not necessary as it is enum
-        @TestParameter(value = [BuildConfig.BUILD_TYPE])
-        buildType: String
+        @TestParameter(value = ["true", "false"])
+        darkTheme: String
     ) {
+        // Get the device config from the test parameter
         paparazzi.unsafeUpdateConfig(devicePreview.deviceConfig)
+
         paparazzi.snapshot {
             CompositionLocalProvider(
                 LocalInspectionMode provides true,
-                LocalLayoutDirection provides directions,
+                LocalLayoutDirection provides directions
             ) {
-                HealthCareTheme {
+                HealthCareTheme(darkTheme.toBoolean()) {
                     Box(
                         Modifier
-                            .background(Color.White)
                             .fillMaxWidth()
                             .wrapContentHeight(),
                         contentAlignment = Alignment.TopCenter

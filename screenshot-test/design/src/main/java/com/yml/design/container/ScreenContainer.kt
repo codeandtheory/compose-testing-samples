@@ -2,7 +2,6 @@ package com.yml.design.container
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.SnackbarHost
 import androidx.compose.material.SnackbarHostState
 import androidx.compose.runtime.Composable
@@ -18,8 +17,6 @@ import com.yml.design.R
 import com.yml.design.error.ErrorData
 import com.yml.design.error.ErrorWidget
 import com.yml.design.snackbar.SnackMessage
-import com.yml.design.theme.Green
-import com.yml.design.theme.Spearmint
 import com.yml.design.toolbar.HCToolBar
 
 @Composable
@@ -84,11 +81,6 @@ fun HCToolBarScreen(
     group = "container",
     locale = "en"
 )
-/*@Preview(
-    name = "toolbar-screen_ar",
-    group = "container",
-    locale = "ar"
-)*/
 @Composable
 fun PreviewFullScreen() {
     HCToolBarScreen(

@@ -16,9 +16,6 @@ import androidx.compose.ui.unit.dp
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.yml.design.R
 import com.yml.design.elements.Description
-import com.yml.design.theme.HealthCareTheme
-import com.yml.design.theme.Rose
-
 
 @Composable
 fun SnackMessage(
@@ -35,8 +32,8 @@ fun SnackMessage(
     ) {
         Description(
             text = description,
-            modifier = Modifier.padding(5.dp),
-            textColor = LocalContentColor.current.copy(.85f)
+            modifier = Modifier.padding(8.dp),
+            textColor = LocalContentColor.current
         )
     }
 }
@@ -45,38 +42,26 @@ fun SnackMessage(
 @Preview
 @Composable
 @ShowkaseComposable("success", "snack")
-fun SnackSuccessPreview() = HealthCareTheme {
+fun SnackSuccessPreview() =
     SnackMessage(description = stringResource(id = R.string.preview_snack_success))
-}
 
 
-/**
- * Multiple previews are supported android studio dolphin onwards
- */
 @Composable
-/*@Preview(
-    name = "error-rtl",
-    locale = "ar"
-)*/
 @Preview(
     name = "error",
-    group = "snack",
-    locale = "en"
+    group = "snack"
 )
-fun SnackErrorPreview() = SnackMessage(
-    description = stringResource(id = R.string.preview_snack_error),
-)
+fun SnackErrorPreview() =
+    SnackMessage(
+        description = stringResource(id = R.string.preview_snack_error),
+        bgColor = MaterialTheme.colors.error
+    )
 
-
-/**
- * Todo test this Parameter provider
- */
-class ParameterProvider : PreviewParameterProvider<String> {
+class ThemeProvider : PreviewParameterProvider<Boolean> {
     override val count: Int
         get() = super.count
-    override val values: Sequence<String>
+    override val values: Sequence<Boolean>
         get() = sequenceOf(
-            "Short Description",
-            "First Line \nSecond Line"
+            true, false
         )
 }

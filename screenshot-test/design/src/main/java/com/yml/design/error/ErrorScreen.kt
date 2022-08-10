@@ -22,7 +22,6 @@ import com.yml.design.R
 import com.yml.design.elements.Description
 import com.yml.design.elements.HCButton
 import com.yml.design.elements.SubHeading
-import com.yml.design.theme.HealthCareTheme
 
 internal object TestTag {
     const val ErrorScreenButton = "error_screen_button"
@@ -77,15 +76,6 @@ fun ErrorWidget(
     }
 }
 
-/*@Preview(
-    group = "error",
-    name = "error-screen-rtl",
-    showSystemUi = true,
-    showBackground = true,
-    device = Devices.PIXEL_4_XL,
-    uiMode = UI_MODE_NIGHT_YES,
-    locale = "ar"
-)*/
 @Preview(
     group = "error",
     name = "error-screen",
