@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="48b74306-bc11-4e52-95e3-cbf8df237600" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.3.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_compose_1_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_4_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_4_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_animation_animation_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_animation_animation_core_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_foundation_foundation_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_foundation_foundation_layout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_foundation_foundation_layout_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_material_material_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_material_material_icons_core_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_material_material_ripple_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_runtime_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_runtime_runtime_saveable_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_geometry_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_graphics_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_test_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_test_junit4_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_test_manifest_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_text_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_tooling_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_tooling_data_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_tooling_preview_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_compose_ui_ui_unit_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_8_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_8_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_3_6_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_hilt_hilt_navigation_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_hilt_hilt_navigation_compose_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_java8_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_ktx_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_compose_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_ktx_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_3_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_ktx_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_compose_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_ktx_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_ktx_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_annotation_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_rules_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_airbnb_android_showkase_1_0_0_beta13_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_airbnb_android_showkase_annotation_1_0_0_beta13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_airbnb_android_showkase_screenshot_testing_1_0_0_beta13_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_6_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_2_42.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_lint_aar_2_42_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_hilt_android_2_42_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_hilt_core_2_42.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_4_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_4_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_jvm_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_test_jvm_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/HealthCareApp.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/Constants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/HealthCareNavigation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/NavigationManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/bottomNav/BottomNavWrapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/graphs/Dashboard.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/graphs/OnBoard.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/graphs/Preference.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/navigation/graphs/Search.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yml/healthcare/ui/theme/NavigrationCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/yml/healthcare/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/consumer-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/androidTest/java/com/yml/core/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/yml/core/constants/GeneralConstants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/yml/core/navigation/AppNavigator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/yml/core/remote/NetworkModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/yml/core/utils/StringUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/yml/core/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/consumer-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/androidTest/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/bottomNavigation/HealthCareNavigation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/bottomNavigation/NavItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/card/CardView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/container/ScreenContainer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/elements/Button.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/elements/Text.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/error/ErrorData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/error/ErrorScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/progress/HCProgressBar.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/snackbar/Snackbar.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/theme/Shape.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/yml/design/toolbar/HCToolBar.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_android_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_angle_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_cross.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_document.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_menu_burger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/values-ar/previews.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/values/previews.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/test/java/com/yml/design/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/consumer-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/data/HomeDataMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/data/api/HomeAPIService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/data/model/ArticleDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/data/model/BlogListDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/data/repository/HomeRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/di/HomeModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/domain/model/HomeDataModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/domain/repository/HomeRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/domain/usecase/HomeUseCaseImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/domain/usecase/HomeUsecase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/view/ArticleListDestination.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/view/ArticleListScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/view/HomeDestination.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/view/LoadedHome.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/view/WebLoader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/viewmodel/articles/ArticleViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/viewmodel/articles/Contract.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/viewmodel/home/Contract.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/java/com/yml/healthcare/home/ui/viewmodel/home/HomeViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/main/res/drawable/health_care_gov.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/test/java/com/yml/healthcare/home/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/test/java/com/yml/healthcare/home/ui/view/ArticleListScreenKtTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/test/java/com/yml/healthcare/home/ui/view/LoadedHomeKtTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/test/snapshots/images/com.yml.healthcare.home.ui.view_ArticleListScreenKtTest_verify article list loaded_articles_loaded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/test/snapshots/images/com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with articles and blogs_home_fully_loaded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/test/snapshots/images/com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with only articles_home_articles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/home/src/test/snapshots/images/com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with only blogs_home_blogs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/consumer-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/src/main/java/com/yml/launcher/SplashDestination.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/src/main/res/drawable/health_care_gov.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/src/test/java/com/yml/launcher/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/src/test/java/com/yml/launcher/SplashDestinationKtTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/launcher/src/test/snapshots/images/com.yml.launcher_SplashDestinationKtTest_record splash screen and verify_splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[bottom_bar_home_selected,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[bottom_bar_home_selected,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[bottom_bar_profile_selected,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[bottom_bar_profile_selected,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[bottom_bar_search_selected,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[bottom_bar_search_selected,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_custom,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_custom,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_custom,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_custom,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_default,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_default,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_default,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[button_default,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_filled,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_filled,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_filled,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_filled,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_no-tags,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_no-tags,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_no-tags,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[card_no-tags,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[container_toolbar-screen,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[container_toolbar-screen,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[container_toolbar-screen,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[container_toolbar-screen,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[elements_progress,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[elements_progress,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[error_error-screen,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[error_error-screen,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[error_error-screen,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[error_error-screen,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_error,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_error,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_error,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_error,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_success,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_success,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_success,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[snack_success,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_image,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_image,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title-left,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title-left,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title-left,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/com.yml.design_SnapTest_sample[toolbar_title-left,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[bottom_bar_home_selected,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[bottom_bar_home_selected,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[bottom_bar_profile_selected,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[bottom_bar_profile_selected,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[bottom_bar_search_selected,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[bottom_bar_search_selected,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_custom,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_custom,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_custom,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_custom,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_default,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_default,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_default,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[button_default,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_filled,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_filled,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_filled,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_filled,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_no-tags,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_no-tags,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_no-tags,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[card_no-tags,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[container_toolbar-screen,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[container_toolbar-screen,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[container_toolbar-screen,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[container_toolbar-screen,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[elements_progress,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[elements_progress,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[error_error-screen,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[error_error-screen,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[error_error-screen,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[error_error-screen,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_error,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_error,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_error,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_error,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_success,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_success,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_success,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[snack_success,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_image,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_image,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title-left,NEXUS_5_LAND,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title-left,NEXUS_5_LAND,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title-left,PIXEL_4_XL,Ltr,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/design/out/failures/delta-com.yml.design_SnapTest_sample[toolbar_title-left,PIXEL_4_XL,Rtl,debug].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/feature/home/out/failures/com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with articles and blogs_home_fully_loaded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/feature/home/out/failures/com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with only articles_home_articles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/feature/home/out/failures/com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with only blogs_home_blogs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/feature/home/out/failures/delta-com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with articles and blogs_home_fully_loaded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/feature/home/out/failures/delta-com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with only articles_home_articles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../screenshot-test/feature/home/out/failures/delta-com.yml.healthcare.home.ui.view_LoadedHomeKtTest_verify home screen with only blogs_home_blogs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../screenshot-test/design/src/test/java/com/yml/design/SnapTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../screenshot-test/design/src/test/java/com/yml/design/SnapTest.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/shrikantballal/.android/avd/Pixel_5_API_30.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2D7PwUz1zE6iN7avIps1FXUAMRO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="Health_Care.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48b74306-bc11-4e52-95e3-cbf8df237600" name="Changes" comment="" />
+      <created>1660047388101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660047388101</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
