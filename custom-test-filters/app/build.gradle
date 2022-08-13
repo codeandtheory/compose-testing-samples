@@ -44,6 +44,25 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+
+    // Specifies one flavor dimension.
+    flavorDimensions "market"
+    productFlavors {
+        india {
+            // Assigns this product flavor to the "version" flavor dimension.
+            // If you are using only one dimension, this property is optional,
+            // and the plugin automatically assigns all the module's flavors to
+            // that dimension.
+            dimension "market"
+            applicationIdSuffix ".in"
+            versionNameSuffix "-in"
+        }
+        canada {
+            dimension "market"
+            applicationIdSuffix ".ca"
+            versionNameSuffix "-ca"
+        }
+    }
 }
 
 dependencies {
