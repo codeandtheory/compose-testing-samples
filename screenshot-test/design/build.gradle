@@ -46,7 +46,7 @@ android {
 
 // Issues : Unknown platform error occurred when running the UTP test suite. Please check logs for details.
 shot {
-    applicationId = "com.myapp" // Check if it is really needed, as per docs it is required for AGP 7.1 +
+    applicationId = "com.yml.healthcare" // Check if it is really needed, as per docs it is required for AGP 7.1 +
 
     /**
      * Can skip the instrumentation tests by making it false
@@ -68,6 +68,7 @@ shot {
      */
     tolerance =  0.1
 
+    showOnlyFailingTestsInReports = true
 }
 
 dependencies {
