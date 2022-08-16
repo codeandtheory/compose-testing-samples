@@ -10,6 +10,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yml.design.R
 import com.yml.design.error.TestTag
+import com.yml.design.theme.HealthCareTheme
 
 /**
  * Reusable Bottom Tab, Can be used from any nav host
@@ -51,10 +52,12 @@ fun <T : BottomNavDestination> HealthCareBottomNavigation(
 @Composable
 fun BottomBarPreviewHomeSelection() {
     val items = createMockBottomNavItems()
-    HealthCareBottomNavigation(
-        isSelected = { items.first() == it },
-        items = items,
-        navigateTo = {})
+    HealthCareTheme {
+        HealthCareBottomNavigation(
+            isSelected = { items.first() == it },
+            items = items,
+            navigateTo = {})
+    }
 }
 
 @Preview(
@@ -64,10 +67,12 @@ fun BottomBarPreviewHomeSelection() {
 @Composable
 fun BottomBarPreviewSearchSelection() {
     val items = createMockBottomNavItems()
-    HealthCareBottomNavigation(
-        isSelected = { items[1] == it },
-        items = items,
-        navigateTo = {})
+    HealthCareTheme {
+        HealthCareBottomNavigation(
+            isSelected = { items[1] == it },
+            items = items,
+            navigateTo = {})
+    }
 }
 
 @Preview(
@@ -77,10 +82,12 @@ fun BottomBarPreviewSearchSelection() {
 @Composable
 fun BottomBarPreviewProfileSelection() {
     val items = createMockBottomNavItems()
-    HealthCareBottomNavigation(
-        isSelected = { items.last() == it },
-        items = items,
-        navigateTo = {})
+    HealthCareTheme {
+        HealthCareBottomNavigation(
+            isSelected = { items.last() == it },
+            items = items,
+            navigateTo = {})
+    }
 }
 
 fun createMockBottomNavItems(): List<BottomNavDestination> {

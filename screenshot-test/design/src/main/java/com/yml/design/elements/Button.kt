@@ -8,6 +8,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yml.design.R
+import com.yml.design.theme.HealthCareTheme
 
 @Composable
 fun HCButton(
@@ -29,7 +30,9 @@ fun HCButton(
 )
 @Composable
 fun PreviewButton() {
-    HCButton(title = stringResource(id = R.string.preview_retry))
+    HealthCareTheme {
+        HCButton(title = stringResource(id = R.string.preview_retry))
+    }
 }
 
 @Preview(
@@ -38,7 +41,9 @@ fun PreviewButton() {
 )
 @Composable
 fun PreviewButtonCustom() {
-    HCButton(
-        title = stringResource(id = R.string.preview_retry)
-    )
+    HealthCareTheme {
+        HCButton(
+            title = stringResource(id = R.string.preview_retry)
+        )
+    }
 }

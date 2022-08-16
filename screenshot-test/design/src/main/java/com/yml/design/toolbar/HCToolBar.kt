@@ -21,6 +21,7 @@ import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.yml.core.constants.Resource
 import com.yml.design.R
 import com.yml.design.elements.Header
+import com.yml.design.theme.HealthCareTheme
 import com.yml.design.toolbar.TestTag.toolBar
 import com.yml.design.toolbar.TestTag.toolBarImage
 import com.yml.design.toolbar.TestTag.toolBarLeftIcon
@@ -113,10 +114,12 @@ fun HCToolBar(
 )
 @Composable
 fun PreviewToolBarTitleAndLeftIcon() {
-    HCToolBar(
-        title = stringResource(id = R.string.preview_home),
-        leftIcon = R.drawable.ic_menu_burger
-    )
+    HealthCareTheme {
+        HCToolBar(
+            title = stringResource(id = R.string.preview_home),
+            leftIcon = R.drawable.ic_menu_burger
+        )
+    }
 }
 
 @Preview(
@@ -125,11 +128,13 @@ fun PreviewToolBarTitleAndLeftIcon() {
 )
 @Composable
 fun PreviewToolBar() {
-    HCToolBar(
-        title = stringResource(id = R.string.preview_home),
-        rightIcon = R.drawable.ic_search,
-        leftIcon = R.drawable.ic_menu_burger
-    )
+    HealthCareTheme {
+        HCToolBar(
+            title = stringResource(id = R.string.preview_home),
+            rightIcon = R.drawable.ic_search,
+            leftIcon = R.drawable.ic_menu_burger
+        )
+    }
 }
 
 @ShowkaseComposable()
@@ -139,9 +144,12 @@ fun PreviewToolBar() {
 )
 @Composable
 fun PreviewToolBarImage() {
-    HCToolBar(
-        headerImage = R.drawable.ic_profile,
-        rightIcon = R.drawable.ic_search,
-        leftIcon = R.drawable.ic_menu_burger
-    )
+
+    HealthCareTheme {
+        HCToolBar(
+            headerImage = R.drawable.ic_profile,
+            rightIcon = R.drawable.ic_search,
+            leftIcon = R.drawable.ic_menu_burger
+        )
+    }
 }

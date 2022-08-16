@@ -22,6 +22,7 @@ import com.yml.design.R
 import com.yml.design.elements.Description
 import com.yml.design.elements.HCButton
 import com.yml.design.elements.SubHeading
+import com.yml.design.theme.HealthCareTheme
 
 internal object TestTag {
     const val ErrorScreenButton = "error_screen_button"
@@ -86,12 +87,15 @@ fun ErrorWidget(
 )
 @Composable
 fun ErrorWidgetPreview() {
-    ErrorWidget(
-        modifier = Modifier.fillMaxWidth(), data = ErrorData(
-            title = stringResource(id = R.string.preview_error_title),
-            description = stringResource(id = R.string.preview_error_description),
-            button = stringResource(id = R.string.preview_retry),
-            icon = R.drawable.ic_home
+
+    HealthCareTheme {
+        ErrorWidget(
+            modifier = Modifier.fillMaxWidth(), data = ErrorData(
+                title = stringResource(id = R.string.preview_error_title),
+                description = stringResource(id = R.string.preview_error_description),
+                button = stringResource(id = R.string.preview_retry),
+                icon = R.drawable.ic_home
+            )
         )
-    )
+    }
 }

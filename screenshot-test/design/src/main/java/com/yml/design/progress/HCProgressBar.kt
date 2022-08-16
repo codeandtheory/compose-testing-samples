@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
+import com.yml.design.theme.HealthCareTheme
 
 @Composable
 fun HCProgressBar() {
@@ -34,5 +35,7 @@ fun HCProgressBar() {
 )
 @Composable
 fun PreviewProgressBar() {
-    HCProgressBar()
+    HealthCareTheme {
+        HCProgressBar()
+    }
 }

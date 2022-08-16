@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.yml.design.elements.SubHeading
 import com.yml.design.elements.Tag
+import com.yml.design.theme.HealthCareTheme
 
 /**
  * TODO move the dimens to one place
@@ -79,11 +80,13 @@ fun HCard(
 )
 @Composable
 fun CardFilled() {
-    HCard(
-        title = "Here is the title",
-        description = "this is description \nSecond line continued... Some text\nThird Line",
-        tags = listOf("Blog", "Reports")
-    )
+    HealthCareTheme {
+        HCard(
+            title = "Here is the title",
+            description = "this is description \nSecond line continued... Some text\nThird Line",
+            tags = listOf("Blog", "Reports")
+        )
+    }
 }
 
 
@@ -93,10 +96,12 @@ fun CardFilled() {
 )
 @Composable
 fun CardNoTags() {
-    HCard(
-        title = "Here is the title",
-        description = "this is description \nSecond line continued... Some text\nThird Line",
-    )
+    HealthCareTheme {
+        HCard(
+            title = "Here is the title",
+            description = "this is description \nSecond line continued... Some text\nThird Line",
+        )
+    }
 }
 
 

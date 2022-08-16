@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.yml.design.R
 import com.yml.design.elements.Description
+import com.yml.design.theme.HealthCareTheme
 
 @Composable
 fun SnackMessage(
@@ -42,8 +43,9 @@ fun SnackMessage(
 @Preview
 @Composable
 @ShowkaseComposable("success", "snack")
-fun SnackSuccessPreview() =
+fun SnackSuccessPreview() = HealthCareTheme {
     SnackMessage(description = stringResource(id = R.string.preview_snack_success))
+}
 
 
 @Composable
@@ -51,11 +53,12 @@ fun SnackSuccessPreview() =
     name = "error",
     group = "snack"
 )
-fun SnackErrorPreview() =
+fun SnackErrorPreview() = HealthCareTheme {
     SnackMessage(
         description = stringResource(id = R.string.preview_snack_error),
         bgColor = MaterialTheme.colors.error
     )
+}
 
 class ThemeProvider : PreviewParameterProvider<Boolean> {
     override val count: Int
