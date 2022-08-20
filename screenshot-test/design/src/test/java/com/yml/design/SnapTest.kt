@@ -1,5 +1,6 @@
 package com.yml.design
 
+import android.content.res.Configuration
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.wrapContentHeight
@@ -7,23 +8,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
 import app.cash.paparazzi.DeviceConfig
-import app.cash.paparazzi.DeviceConfig.Companion.NEXUS_5_LAND
 import app.cash.paparazzi.DeviceConfig.Companion.PIXEL_4_XL
 import app.cash.paparazzi.Paparazzi
 import com.airbnb.android.showkase.models.Showkase
 import com.airbnb.android.showkase.models.ShowkaseBrowserComponent
 import com.google.testing.junit.testparameterinjector.TestParameter
 import com.google.testing.junit.testparameterinjector.TestParameterInjector
-import com.yml.design.theme.HealthCareTheme
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
-const val PERCENT_DIFFERENCE = 0.0
+const val PERCENT_DIFFERENCE = 0.01
 
 class ComponentPreview(
     private val skBrowser: ShowkaseBrowserComponent
@@ -63,7 +63,7 @@ class SnapTest {
     object DeviceConfigs : TestParameter.TestParameterValuesProvider {
         override fun provideValues() = listOf(
             DevicePreview(PIXEL_4_XL, "PIXEL_4_XL"),
-            DevicePreview(NEXUS_5_LAND, "NEXUS_5_LAND")
+//            DevicePreview(NEXUS_5_LAND, "NEXUS_5_LAND")
         )
     }
 
@@ -97,18 +97,24 @@ class SnapTest {
 
         paparazzi.snapshot {
             CompositionLocalProvider(
+
                 LocalInspectionMode provides true,
-                LocalLayoutDirection provides directions
+
+                LocalLayoutDirection provides directions,
+
+                LocalConfiguration provides LocalConfiguration.current.apply {
+                    this.uiMode = if (darkTheme.toBoolean()) Configuration.UI_MODE_NIGHT_YES
+                    else Configuration.UI_MODE_NIGHT_NO
+                }
+
             ) {
-                HealthCareTheme(darkTheme.toBoolean()) {
-                    Box(
-                        Modifier
-                            .fillMaxWidth()
-                            .wrapContentHeight(),
-                        contentAlignment = Alignment.TopCenter
-                    ) {
-                        componentPreview.content()
-                    }
+                Box(
+                    Modifier
+                        .fillMaxWidth()
+                        .wrapContentHeight(),
+                    contentAlignment = Alignment.TopCenter
+                ) {
+                    componentPreview.content()
                 }
             }
         }
