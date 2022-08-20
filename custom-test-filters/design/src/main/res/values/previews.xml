@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preview_snack_error">Something went wrong!\nPlease check your internet connection</string>
+    <string name="preview_snack_success">Saved successfully</string>
+    <string name="preview_error_title">Something went wrong</string>
+    <string name="preview_error_description">Please Check your internet connection</string>
+    <string name="preview_retry">Retry</string>
+    <string name="preview_home">Home</string>
+
+</resources>

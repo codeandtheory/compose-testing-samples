@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preview_snack_success">حفظ بنجاح</string>
+    <string name="preview_snack_error">هناك خطأ ما! الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="preview_error_title">هناك خطأ ما</string>
+    <string name="preview_error_description">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="preview_retry">أعد المحاولة</string>
+    <string name="preview_home">مسكن</string>
+</resources>
