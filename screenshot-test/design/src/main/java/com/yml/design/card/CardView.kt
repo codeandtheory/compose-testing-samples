@@ -6,19 +6,17 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.yml.design.elements.SubHeading
 import com.yml.design.elements.Tag
-import com.yml.design.theme.HotPink
-import com.yml.design.theme.JetBlack
+import com.yml.design.theme.HealthCareTheme
 
 /**
  * TODO move the dimens to one place
@@ -42,20 +40,22 @@ fun HCard(
             bottomEnd = 10.dp,
             bottomStart = 10.dp
         ),
-        elevation = 5.dp,
-        backgroundColor = Color.White
+        elevation = 5.dp
     ) {
         Column(
             modifier = Modifier
                 .padding(10.dp)
         ) {
 
-            SubHeading(text = title)
+            SubHeading(
+                text = title,
+                color = MaterialTheme.colors.primary
+            )
 
             Text(
                 text = description,
                 modifier = Modifier.padding(top = 10.dp),
-                style = TextStyle(color = JetBlack, fontSize = 14.sp),
+                style = TextStyle(fontSize = 14.sp),
                 maxLines = 4
             )
             tags?.let { list ->
@@ -74,20 +74,19 @@ fun HCard(
     }
 }
 
-/**
- * @Preview is equivalent to @ShowkaseComposable
- */
 @Preview(
     name = "filled",
     group = "card"
 )
 @Composable
 fun CardFilled() {
-    HCard(
-        title = "Here is the title",
-        description = "this is description \nSecond line continued... Some text\nThird Line",
-        tags = listOf("Blog", "Reports")
-    )
+    HealthCareTheme {
+        HCard(
+            title = "Here is the title",
+            description = "this is description \nSecond line continued... Some text\nThird Line",
+            tags = listOf("Blog", "Reports")
+        )
+    }
 }
 
 
@@ -95,18 +94,14 @@ fun CardFilled() {
     name = "no-tags",
     group = "card"
 )
-/*@Preview(
-    name = "no-tags-scaled-rtl",
-    group = "card",
-    locale = "ar",
-    fontScale = 2f
-)*/
 @Composable
 fun CardNoTags() {
-    HCard(
-        title = "Here is the title",
-        description = "this is description \nSecond line continued... Some text\nThird Line",
-    )
+    HealthCareTheme {
+        HCard(
+            title = "Here is the title",
+            description = "this is description \nSecond line continued... Some text\nThird Line",
+        )
+    }
 }
 
 

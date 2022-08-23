@@ -46,7 +46,7 @@ android {
 
 // Issues : Unknown platform error occurred when running the UTP test suite. Please check logs for details.
 shot {
-    applicationId = "com.myapp" // Check if it is really needed, as per docs it is required for AGP 7.1 +
+    applicationId = "com.yml.healthcare" // Check if it is really needed, as per docs it is required for AGP 7.1 +
 
     /**
      * Can skip the instrumentation tests by making it false
@@ -68,6 +68,7 @@ shot {
      */
     tolerance =  0.1
 
+    showOnlyFailingTestsInReports = true
 }
 
 dependencies {
@@ -104,6 +105,7 @@ dependencies {
     // To perform screenshot testing using showkase
     androidTestImplementation "com.airbnb.android:showkase-screenshot-testing:1.0.0-beta13"
     kaptAndroidTest "com.airbnb.android:showkase-processor:1.0.0-beta13"
+    androidTestImplementation "com.google.testparameterinjector:test-parameter-injector:1.8"
 
 
     implementation "com.google.dagger:hilt-android:2.42"

@@ -1,13 +1,11 @@
 package com.yml.healthcare.home.ui.view
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import com.yml.core.navigation.AppNavigator
 import com.yml.design.container.HCToolBarScreen
 import com.yml.design.error.ErrorWidget
@@ -41,7 +39,6 @@ private fun ArticleListDestination(
     HCToolBarScreen(
         title = state.screenTitle,
         leftIcon = com.yml.design.R.drawable.ic_angle_left,
-        modifier = Modifier.background(color = Color.White),
         onLeftIconClick = {
             navigator.navigateBack()
         }
@@ -70,7 +67,6 @@ private fun ArticleListDestination(
                 ErrorWidget(
                     data = state.error, modifier = Modifier
                         .fillMaxSize()
-                        .background(Color.White)
                 )
             }
             is ArticlesViewState.InitialLoading -> {

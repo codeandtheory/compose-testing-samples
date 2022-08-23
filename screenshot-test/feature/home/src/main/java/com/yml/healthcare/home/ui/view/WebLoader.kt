@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.viewinterop.AndroidView
 import com.yml.core.navigation.AppNavigator
 import com.yml.design.container.HCToolBarScreen
-import javax.inject.Inject
 
 @Composable
 fun HCWebView(url: String, title: String, navigator: AppNavigator) {
