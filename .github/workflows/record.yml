@@ -7,6 +7,9 @@ jobs:
   instrumentationTests:
     name: Screenshot Tests
     runs-on: macos-11
+    defaults:
+      run:
+        working-directory: ./screenshot-test
     steps:
       - uses: actions/checkout@v2
         with:
