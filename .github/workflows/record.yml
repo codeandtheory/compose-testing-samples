@@ -7,9 +7,10 @@ jobs:
   instrumentationTests:
     name: Screenshot Tests
     runs-on: macos-11
+    defaults:
+      run:
+        working-directory: ./screenshot-test
     steps:
-      - name: Go to screenShot testing folder
-        run: cd screenshot-test
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.API_TOKEN_GITHUB }}
