@@ -19,7 +19,7 @@ To begin with, we have created a reference material to perform [Screenshot Testi
 
 ## Support
 
-If you've found an error in this repo, please file an issue: https://github.com/yml-org/YCoreUI/issues
+If you've found an error in this repo, please file an issue: https://github.com/yml-org/compose-testing-samples/issues
 
 Patches are encouraged, and may be submitted by forking this project and submitting a pull request through GitHub. 
 
