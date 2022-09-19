@@ -8,7 +8,7 @@ This is a collection of all Android testing samples developed by YML engineering
 ![Hex.pm](https://img.shields.io/hexpm/l/plug) ![platform](https://img.shields.io/badge/platform--compatibility-android-brightgreen)
 
 
-To begin with, we have created a reference material to perform [Screenshot Testing in a Jetpack Compose multi-module/repo architecture project](https://github.com/yml-org/compose-testing-samples/wiki).
+Wiki documentation: [Screenshot Testing in a Jetpack Compose multi-module/repo architecture project](https://github.com/yml-org/compose-testing-samples/wiki).
 
 
 ## Prerequisites
